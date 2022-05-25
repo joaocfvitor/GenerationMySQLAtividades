@@ -6,11 +6,12 @@ CREATE TABLE tb_classe (
 
 id BIGINT AUTO_INCREMENT,
 nome_classe VARCHAR (30),
+tipo_arma VARCHAR(50),
 PRIMARY KEY (id)
 );
 
-INSERT INTO tb_classe (nome_classe) 
-VALUES ("Arqueiro"), ("Guerreiro"), ("Mago"), ("Ciclope"), ("Minotauro");
+INSERT INTO tb_classe (nome_classe, tipo_arma) 
+VALUES ("Arqueiro","Arco-flecha"), ("Guerreiro","Espada"), ("Mago","Cajado"), ("Ciclope","Martelo"), ("Minotauro","Machado");
 
 SELECT * FROM tb_classe;
 
